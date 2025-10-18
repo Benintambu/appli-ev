@@ -1,0 +1,8 @@
+/* Dashboard */
+.main-content {
+    width: calc(100% - min(350px, 100%));
+    min-height: 100vh;
+    right: 0;
+    position: absolute;
+    z-index: 0;
+}

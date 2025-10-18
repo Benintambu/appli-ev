@@ -77,6 +77,9 @@
   color: var(--main-color);
 }
 
+/* Media queries */
+
+/* Login */
 @media (max-width: 1000px) {
   .login-item {
     width: 100%;
