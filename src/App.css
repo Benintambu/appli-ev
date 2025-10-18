@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    font-family: "Open Sans";
+    box-sizing: border-box;
+}
+
+:root {
+    /* Color */
+    --main-color: #0041C7;
+    --white-color: #fff;
+    --grey3: #999999;
+    --black-color: #1e1e1e;
+
+    /* Transitions */
+    --main-transition: all 0.3s ease;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+}
+
+/* Styles géréraux et communs*/
+.button {
+    padding: 15px 30px;
+    background-color: var(--main-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.input {
+    height: 50px;
+    background-color: transparent;
+    border-radius: .3rem;
+    padding: 0 7px;
+    border: 1px solid var(--grey3);
+}
+
+.input-container {
+    display: grid;
+    position: relative;
+}
+
+.input-container .bxr {
+    position: absolute;
+    top: 49%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 25px;
+}

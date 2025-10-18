@@ -1,0 +1,74 @@
+.logo {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+
+.login-container {
+  padding: 15px;
+  height: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-left {
+  position: relative;
+  height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.login-title {
+  margin-bottom: 12px;
+}
+
+.login-left h1 {
+  margin-bottom: 8px;
+}
+
+.login-right {
+  width: 55%;
+  background-color: #999999;
+  height: 100%;
+  border-radius: .5rem;
+  background-image: url('./assets/images/background/bg_1-min.webp');
+  background-position: center;
+  background-size: cover;
+}
+
+.input-login-container {
+  display: grid;
+  gap: 7px;
+  margin: 15px 0;
+}
+
+.forgot-password {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.forgot-password a {
+  color: var(--black-color);
+  transition: var(--main-transition);
+}
+
+.forgot-password a:hover {
+  color: var(--main-color);
+}
+
+@media (max-width: 938px) {
+  .login-right {
+    display: none;
+  }
+
+  .login-left {
+    width: 100%;
+  }
+}
