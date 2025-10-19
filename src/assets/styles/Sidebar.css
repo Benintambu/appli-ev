@@ -1,5 +1,6 @@
 .sidebar {
-    background-color: var(--white-color);
+    /*     background-color: var(--white-color);
+ */
     height: 100vh;
     width: min(350px, 100%);
     padding: 25px 22px;
@@ -60,8 +61,12 @@
     justify-content: center;
 }
 
-.side-bot a .brx {
-    font-size: 21px;
+.side-bot a .bxr {
+    font-size: 17px;
+    background-color: var(--main-color);
+    color: var(--white-color);
+    border-radius: .5rem;
+    padding: 10px;
 }
 
 .side-bot a {
@@ -79,4 +84,8 @@
 
 .side-bot a:hover {
     color: var(--main-color);
+}
+
+.side-bot a:hover .side-bot a .bxr {
+    background-color: var(--black-color);
 }

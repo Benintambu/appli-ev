@@ -2,14 +2,14 @@ import '../assets/styles/Sidebar.css';
 
 export default function SideBar({ activePage }) {
     const navItems = [
-        { id: 1, label: "tableau de bord", icon: 'bxr  bx-home-alt-2', link: '/dashboard' },
-        { id: 2, label: "enseignants", icon: 'bxr  bx-education', link: '/users' },
-        { id: 3, label: "élèves", icon: 'bxr bx-group', link: '/settings' },
-        { id: 4, label: "classes", icon: 'bxr  bx-school', link: '/notifications' },
-        { id: 5, label: "notes et évaluation", icon: 'bxr  bx-star', link: '/history' },
-        { id: 6, label: "communications", icon: 'bxr  bx-message', link: '/help' },
-        { id: 7, label: "paramètres", icon: 'bxr  bx-cog', link: '/reports' },
-        { id: 8, label: "rapports et statistiques", icon: 'bxr  bx-file-detail', link: '/analytics' },
+        { id: 1, label: "tableau de bord", icon: 'bxr  bxs-home-alt-2', link: '/dashboard' },
+        { id: 2, label: "enseignants", icon: 'bxr  bxs-education', link: '/teacher' },
+        { id: 3, label: "élèves", icon: 'bxr bxs-group', link: '/settings' },
+        { id: 4, label: "classes", icon: 'bxr  bxs-school', link: '/notifications' },
+        { id: 5, label: "notes et évaluation", icon: 'bxr  bxs-star', link: '/history' },
+        { id: 6, label: "communications", icon: 'bxr  bxs-message-dots', link: '/help' },
+        { id: 7, label: "rapports et statistiques", icon: 'bxr  bxs-file-detail', link: '/analytics' },
+        { id: 8, label: "paramètres", icon: 'bxr  bxs-cog', link: '/reports' },
     ];
 
     const menuItems = navItems.map((items) => (
@@ -35,9 +35,9 @@ export default function SideBar({ activePage }) {
                 </div>
 
                 <div className="side-bot">
-                    <a href="dashboard">
+                    <a href="/">
                         <i class='bxr  bxs-arrow-out-left-square-half'  ></i>
-                        <span>Décconexion</span>
+                        <span>Déconnexion</span>
                     </a>
                 </div>
             </aside >

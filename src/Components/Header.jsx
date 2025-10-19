@@ -3,20 +3,20 @@ import Input from './Input'
 import profilePic from '../assets/images/profile.jpg';
 import ProfilePic from './ProfilePic';
 
-export default function Header() {
+export default function Header({ headerTitle }) {
     return (
         <header className="header">
-            <h2>Hi, Evodie</h2>
+            <h2>{headerTitle}</h2>
             <div className="header-right">
-                <div className="header-input-container">
+                {/* <div className="header-input-container">
                     <Input
                         placeholder={"Rechercher..."}
                         type="text"
                         className={"input input-header"}
                     />
                     <i class='bxr  bx-search-big'  ></i>
-                </div>
-                <a href="#"><i class='bxr  bx-bell'  ></i></a>
+                </div> */}
+                <a href="#"><i class='bxr  bxs-bell'  ></i></a>
                 <ProfilePic src={profilePic} alt={"profile-pic"} className={"header-profile"} />
             </div>
         </header>

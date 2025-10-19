@@ -7,7 +7,7 @@ export default function Dashboard() {
         <>
             <SideBar activePage={1} />
             <main className="main-content">
-                <Header />
+                <Header headerTitle={"Hi, Béni"} />
 
             </main>
         </>
